@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+    wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;
+    0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logoHeader" src="./img/Logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="textarea" class="textarea" placeholder="Ingrese texto"></textarea>
+                <div class="izquierdaFooter">
+                    <span class="requisitosIzquierda"><i class="fa-sharp-duotone fa-solid 
+                        fa-circle-info"></i> Solo letras minúsculas y sin acentos ni caracteres especiales</span>
+                    <div class="izquierdaBotones">
+                        <button id="botonEncriptar" class="botonEncriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>        
+            <div id="derecha" class="derecha">
+                <img id="imgMuñeco" class="imgMuñeco" src="./img/Muñeco.png" alt="">
+                <!--<div class="requisitosDerecha">-->
+                    <textarea id="mensajeFinal" class="mensajeFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p  id="mensajeInfo" class="mensajeInfo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <!--</div>-->
+                <button id="botonCopiar" class="botonCopiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="./img/logoEncriptador.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE MI</h2>
+                <p>Proyecto creado por Sergio Olier Meza, estudiante de desarrollo de sofware</p>
+                <p>Este es un reto propuesto por Alura Latam, consiste en un encriptador de texto</p>
+            </div>
+            <div class="box">
+                <h2>CONTACTAME</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/SergioAndres.zzz/" target="_blank" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/sergioandres.zzz" target="_blank" class="fa-brands fa-instagram"></a   >
+                    <a href="https://github.com/SergioOlier" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://www.linkedin.com/in/sergio-olier-meza-567045274/" target="_blank" class="fa-brands fa-linkedin-in"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Encriptador Alura</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/sweetAlert.js"></script>
+</body>
+</html>
